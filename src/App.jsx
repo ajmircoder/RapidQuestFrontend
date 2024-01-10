@@ -1,7 +1,7 @@
 import "./index.css";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faHouse, faXmark, faDove, faMagnifyingGlass, faArrowRightFromBracket, faBell } from '@fortawesome/free-solid-svg-icons';
-import { faUser, faKeyboard, faRectangleList} from '@fortawesome/free-regular-svg-icons'
+import { faUser, faKeyboard, faRectangleList } from '@fortawesome/free-regular-svg-icons'
 import { useState } from "react";
 
 function App() {
@@ -37,7 +37,7 @@ function App() {
                 src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPKFZTRvcFk7Hq1yChAkSdl1I60KrRaE3W_A&usqp=CAU" alt="" />
               <div className="">
                 <p className=" text-lg lg:text-2xl lg:font-bold">Hi Mike,</p>
-                <p className=" text-sm lg:text-xl lg:font-semibold">welcome back</p>
+                <p className=" text-sm lg:text-xl lg:font-semibold">welcome back.</p>
               </div>
             </div>
             {/* image sec end */}
@@ -130,7 +130,7 @@ function App() {
               </div>
             </div>
             {/* graph */}
-            <div className="grid  grid-cols-[12%_88%]">
+            <div className="grid  grid-cols-[12%_88%] my-4">
               <div className="grid py-1 font-thin lg:font-semibold">
                 <p>$300</p>
                 <p>$200</p>
@@ -138,15 +138,20 @@ function App() {
                 <p>$50</p>
                 <p className="pb-2">$0</p>
               </div>
-              <div className="simple-bar-chart">
+              <div className="simple-bar-chart overflow-hidden">
                 <div className="item" style={{ "--clr": "#5EB344", "--val": "10" }}> </div>
-                <div className="item " style={{ "--clr": "#FCB72A", "--val": "30" }}></div>
-                <div className="item " style={{ "--clr": "#F8821A", "--val": "50" }}></div>
-                <div className="item " style={{ "--clr": "#E0393E", "--val": "70" }}> </div>
-                <div className="item " style={{ "--clr": "#963D97", "--val": "90" }}></div>
-                <div className="item " style={{ "--clr": "#069CDB", "--val": "100" }}></div>
+                <div className="item " style={{ "--clr": "#FCB72A", "--val": "20" }}></div>
+                <div className="item " style={{ "--clr": "#F8821A", "--val": "30" }}></div>
+                <div className="item " style={{ "--clr": "#E0393E", "--val": "40" }}> </div>
+                <div className="item " style={{ "--clr": "#963D97", "--val": "50" }}></div>
+                <div className="item " style={{ "--clr": "#069CDB", "--val": "60" }}></div>
+                <div className={`item`} style={{ "--clr": "#069CDB", "--val": "70", }}></div>
+                <div className={`item`} style={{ "--clr": "#069CDB", "--val": "80", }}></div>
+                <div className={`item`} style={{ "--clr": "#069CDB", "--val": "90", }}></div>
+                <div className={`item`} style={{ "--clr": "#069CDB", "--val": "100", }}></div>
                 <div className={`item`} style={{ "--clr": "#069CDB", "--val": "110", }}></div>
-
+                <div className={`item`} style={{ "--clr": "#069CDB", "--val": "120", }}></div>
+                <div className={`item`} style={{ "--clr": "#069CDB", "--val": "130", }}></div>
               </div>
             </div>
             {/* graph */}
@@ -162,7 +167,7 @@ function App() {
       <section className="bg-white rounded-t-xl lg:rounded-none lg:px-4 lg:py-2">
         <div className=" lg:bg-[#fafafa] lg:h-full lg:rounded-xl">
           <nav className="p-3 text-end lg:hidden">
-          <button className=" bg-[#fafafa] px-1.5 py-1 rounded-md hover:bg-[#4935ff] focus:bg-[#4935ff]"><FontAwesomeIcon icon={faXmark} /></button>
+            <button className=" bg-[#fafafa] px-1.5 py-1 rounded-md hover:bg-[#4935ff] focus:bg-[#4935ff]"><FontAwesomeIcon icon={faXmark} /></button>
           </nav>
           <header className="p-3">
             <div>
@@ -172,7 +177,7 @@ function App() {
             <div className="flex">
               <label htmlFor="age" className=" mr-14 lg:font-semibold">Age: </label>
               <div className=" flex">
-                <p className="mr-1">Under</p>
+                <p className="mr-1 lg:font-semibold">Under</p>
                 <select className="font-semibold" name="" id="age">
                   <option value="20">20</option>
                   <option value="21">21</option>
@@ -192,7 +197,7 @@ function App() {
             <div className="flex">
               <label htmlFor="Salary" className="mr-10 lg:font-semibold">Salary: </label>
               <div className=" flex">
-                <p className="mr-1">K20 - </p>
+                <p className="mr-1 lg:font-semibold">K20 - </p>
                 <select className="font-semibold" name="" id="Salary">
                   <option value="20">K20</option>
                   <option value="21">K21</option>
@@ -254,11 +259,19 @@ function App() {
                 </div>
               </div>
               <div className="">
-                <p className="font-semibold">Employee Contribution</p>
+                <p className="font-semibold">Retirement Age</p>
                 <div className="flex">
-                  <input value={rangeTwo} onChange={(e) => setRangeTwo(e.target.value)} type="range" className=" mr-5 w-full" />
-                  <p>{rangeTwo}%</p>
+                  <input value={rangeTwo} onChange={(e) => setRangeTwo(e.target.value)} type="range" max="70" className=" mr-5 w-full" />
+                  <p>{rangeTwo}</p>
                 </div>
+              </div>
+              <div className="flex justify-between my-2 font-semibold">
+                <p>Employer Contribution</p>
+                <p>8.4%</p>
+              </div>
+              <div className="flex justify-between my-2 font-semibold">
+                <p>Interest Rate</p>
+                <p>5%</p>
               </div>
             </div>
             <div className="bg-[#e8e8e9] lg:rounded-b-3xl active:opacity-65">
