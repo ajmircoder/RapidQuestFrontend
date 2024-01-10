@@ -1,7 +1,7 @@
 import "./index.css";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faHouse, faXmark, faDove, faMagnifyingGlass, faArrowRightFromBracket, faBell } from '@fortawesome/free-solid-svg-icons';
-import { faUser, faFileLines, faRectangleList } from '@fortawesome/free-regular-svg-icons'
+import { faUser, faKeyboard, faRectangleList} from '@fortawesome/free-regular-svg-icons'
 import { useState } from "react";
 
 function App() {
@@ -13,16 +13,16 @@ function App() {
         <div className="hidden lg:grid grid-rows-[10%_80%_10%]">
           <div>
             <button className=" px-1.5 py-1 block rounded-md hover:bg-[#4935ff] focus:bg-[#4935ff]"><FontAwesomeIcon icon={faDove} /></button>
-            <button className=" px-1.5 py-1 block rounded-md hover:bg-[#4935ff] focus:bg-[#4935ff]"><FontAwesomeIcon icon={faMagnifyingGlass} /></button>
+            <button className=" px-1.5 py-1 block rounded-md hover:bg-[#4935ff] focus:bg-[#4935ff] lg:my-1"><FontAwesomeIcon icon={faMagnifyingGlass} /></button>
           </div>
           <div>
-            <button className=" px-1.5 py-1 block rounded-md hover:bg-[#4935ff] focus:bg-[#4935ff]"><FontAwesomeIcon icon={faHouse} /></button>
-            <button className=" px-1.5 py-1 block rounded-md hover:bg-[#4935ff] focus:bg-[#4935ff]"><FontAwesomeIcon icon={faFileLines} /></button>
-            <button className=" px-1.5 py-1 block rounded-md hover:bg-[#4935ff] focus:bg-[#4935ff]"><FontAwesomeIcon icon={faRectangleList} /></button>
-            <button className=" px-1.5 py-1 block rounded-md hover:bg-[#4935ff] focus:bg-[#4935ff]"><FontAwesomeIcon icon={faUser} /></button>
+            <button className=" px-1.5 py-1 block rounded-md hover:bg-[#4935ff] focus:bg-[#4935ff] lg:my-1"><FontAwesomeIcon icon={faHouse} /></button>
+            <button className=" px-1.5 py-1 block rounded-md hover:bg-[#4935ff] focus:bg-[#4935ff] lg:my-1"><FontAwesomeIcon icon={faKeyboard} /></button>
+            <button className=" px-1.5 py-1 block rounded-md hover:bg-[#4935ff] focus:bg-[#4935ff] lg:my-1"><FontAwesomeIcon icon={faRectangleList} /></button>
+            <button className=" px-1.5 py-1 block rounded-md hover:bg-[#4935ff] focus:bg-[#4935ff] lg:my-1"><FontAwesomeIcon icon={faUser} /></button>
           </div>
           <div>
-            <button className=" px-1.5 py-1 block rounded-md hover:bg-[#4935ff] focus:bg-[#4935ff]"><FontAwesomeIcon icon={faBell} /></button>
+            <button className=" px-1.5 py-1 block rounded-md hover:bg-[#4935ff] focus:bg-[#4935ff] lg:my-1"><FontAwesomeIcon icon={faBell} /></button>
             <button className=" px-1.5 py-1 block rounded-md hover:bg-[#4935ff] focus:bg-[#4935ff]"><FontAwesomeIcon icon={faArrowRightFromBracket} /></button>
           </div>
         </div>
@@ -76,7 +76,7 @@ function App() {
         </div>
         <footer className="flex justify-between px-2 mt-5 lg:hidden">
           <button className=" bg-[#fafafa] px-1.5 py-1 rounded-md hover:bg-[#4935ff] focus:bg-[#4935ff]"><FontAwesomeIcon icon={faHouse} /></button>
-          <button className=" bg-[#fafafa] px-1.5 py-1 rounded-md hover:bg-[#4935ff] focus:bg-[#4935ff]"><FontAwesomeIcon icon={faFileLines} /></button>
+          <button className=" bg-[#fafafa] px-1.5 py-1 rounded-md hover:bg-[#4935ff] focus:bg-[#4935ff]"><FontAwesomeIcon icon={faKeyboard} /></button>
           <button className=" bg-[#fafafa] px-1.5 py-1 rounded-md hover:bg-[#4935ff] focus:bg-[#4935ff]"><FontAwesomeIcon icon={faRectangleList} /></button>
           <button className=" bg-[#fafafa] px-1.5 py-1 rounded-md hover:bg-[#4935ff] focus:bg-[#4935ff]"><FontAwesomeIcon icon={faUser} /></button>
         </footer>
@@ -153,7 +153,7 @@ function App() {
           </div>
           <footer className="flex justify-between px-2 mt-5 lg:hidden">
             <button className=" bg-[#fafafa] px-1.5 py-1 rounded-md hover:bg-[#4935ff] focus:bg-[#4935ff]"><FontAwesomeIcon icon={faHouse} /></button>
-            <button className=" bg-[#fafafa] px-1.5 py-1 rounded-md hover:bg-[#4935ff] focus:bg-[#4935ff]"><FontAwesomeIcon icon={faFileLines} /></button>
+            <button className=" bg-[#fafafa] px-1.5 py-1 rounded-md hover:bg-[#4935ff] focus:bg-[#4935ff]"><FontAwesomeIcon icon={faKeyboard} /></button>
             <button className=" bg-[#fafafa] px-1.5 py-1 rounded-md hover:bg-[#4935ff] focus:bg-[#4935ff]"><FontAwesomeIcon icon={faRectangleList} /></button>
             <button className=" bg-[#fafafa] px-1.5 py-1 rounded-md hover:bg-[#4935ff] focus:bg-[#4935ff]"><FontAwesomeIcon icon={faUser} /></button>
           </footer>
@@ -162,7 +162,7 @@ function App() {
       <section className="bg-white rounded-t-xl lg:rounded-none lg:px-4 lg:py-2">
         <div className=" lg:bg-[#fafafa] lg:h-full lg:rounded-xl">
           <nav className="p-3 text-end lg:hidden">
-            <button><FontAwesomeIcon icon={faXmark} /></button>
+          <button className=" bg-[#fafafa] px-1.5 py-1 rounded-md hover:bg-[#4935ff] focus:bg-[#4935ff]"><FontAwesomeIcon icon={faXmark} /></button>
           </nav>
           <header className="p-3">
             <div>
