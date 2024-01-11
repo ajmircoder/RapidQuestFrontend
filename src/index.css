@@ -74,6 +74,7 @@ hr{
   bottom: 0;
   left: 0;
   background-color: #3498db; /* Change the color as needed */
+  animation: item-height 1s ease forwards
 }
 
 .graph-label {

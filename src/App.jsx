@@ -232,8 +232,8 @@ function App() {
               </div>
               <div>
                 <div className="graph-container h-14 w-14">
-                  <div className={`graph-fill w-[100%] h-[95%]`}></div>
-                  <div className="graph-label">95%</div>
+                  <div className={`graph-fill w-[100%] h-[85%]`}></div>
+                  <div className="graph-label">85%</div>
                 </div>
                 <p className="text-center">Top</p>
               </div>
