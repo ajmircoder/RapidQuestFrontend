@@ -4,7 +4,7 @@ This is a simple frontend page built with React.
 
 ## Clone the repository:
 
-- https://github.com/ajmircoder/AulaCubeTechnologiesProject.git
+- https://github.com/ajmircoder/RapidQuestFrontend.git
 
 ## Getting Started
 
